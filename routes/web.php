@@ -14,8 +14,8 @@ use App\Http\Controllers\PostController; // 外部にあるPostControllerクラ�
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('posts.index');
+// });
 
 Route::get('/', [PostController::class, 'index']);
